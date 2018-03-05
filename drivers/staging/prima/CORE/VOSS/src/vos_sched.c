@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2012-2017 The Linux Foundation. All rights reserved.
  *
- * Previously licensed under the ISC license by Qualcomm AtherosCONFIG_POWERSUSPEND, Inc.
+ * Previously licensed under the ISC license by Qualcomm Atheros, Inc.
  *
  *
  * Permission to use, copy, modify, and/or distribute this software for
@@ -2090,7 +2090,7 @@ VOS_STATUS vos_watchdog_wlan_shutdown(void)
 
     /* Update Riva Reset Statistics */
     pHddCtx->hddRivaResetStats++;
-#ifdef CONFIG_POWERSUSPEND
+#ifdef CONFIG_HAS_EARLYSUSPEND
     if(VOS_STATUS_SUCCESS != hdd_wlan_reset_initialization())
     {
        VOS_ASSERT(0);
