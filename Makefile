@@ -421,7 +421,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
-		   -std=gnu89 $(CLANG_FLAGS)
+		   -std=gnu89 $(CLANG_FLAGS) \
 		   -Wno-implicit-function-declaration \
 
 KBUILD_AFLAGS_KERNEL :=
